@@ -1,0 +1,32 @@
+Creat Own Token In Solana Blockchain.
+
+1.Open Google Chrome or any other browser and paste this link (Link-https://docs.solanalabs.com/).
+2.Go to Installation section under Command Line Tools.
+3.Then look the "Use Solana's Install Tool" section and download Solana as your system preference.
+4.Open Command Prompt.
+5.Type the following commad to create Public Key on Solana platform.
+6."solana-keygen new" if your are create it for first time, other-wise write this command "solana-keygen new --force".
+7.Write "solana-keygen pubkey" or "solana address" to show the Public Key.
+8.To check the balance in this account wirte "solana balance <Public Key> --url devnet"
+9.Write "solana airdrop <ammount> <Public Key> --url devnet" to add some balance.
+10.Perform step-8 again to check balance.
+11.Open Google Chrome or any other browser and paste this link (Link-https://explorer.solana.com/).
+12.Now change Mainnet Beta to Devnet.
+13.Paste Public Key here to access your account.
+14.Now write "cargo install spl-token-cli" to install library to create Token.
+15.Create Token by using "spl-token create-token --url devnet".
+16.Create Account by using "spl-token create-account <Token Address> --url devnet".
+17.Check balance "spl-token balance <Token Address> --url devnet".
+18.To add some token use "spl-token mint <Token Address> <Ammount> --url devnet".
+19.Perform step-17 again to checkalance.
+20.To check the supply use "spl-token supply  <Token Address> --url devnet".
+21.Limit the supply use "spl-token authorize <Token Address> mint --disable --url devnet".
+22.To Burn Token use "spl-token burn <Account Address> <Ammount> --url devnet".
+23.Perform step-17 again to checkalance.
+24.To receive token in wallet install Phantom wallet in system.
+25.After openig Phantom wallet go Setting->Developer Settings->Active Testnet Mode.
+26.Copy Solana Devnet Address.
+27.To transfer token write the command "spl-token transfer <Token Address> <Amount>
+<Solana Devnet Address> --url devnet --allow-unfunded-recipient --fund-recipient".
+
+*Prerequiest-Rust must be install in the system.*
