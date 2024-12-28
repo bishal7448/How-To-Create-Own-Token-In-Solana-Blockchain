@@ -1,4 +1,4 @@
-Creat Own Token In Solana Blockchain.
+Creat Own Token In Solana Blockchain......
 
 1.Open Google Chrome or any other browser and paste this link (Link-https://docs.solanalabs.com/).
 2.Go to Installation section under Command Line Tools.
